@@ -1,0 +1,39 @@
+name: pataghar
+description: Official Bangladeshi e-papers in one shared reader.
+publish_to: none
+version: 0.3.0+3
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.6
+  url_launcher: ^6.3.3
+  webview_flutter: ^4.14.1
+  web: ^1.1.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/papers.json
+    - assets/brand/pataghar.png
+    - assets/fonts/OFL.txt
+    - assets/fonts/OFL-sans.txt
+    - assets/fonts/OFL-notosans.txt
+    - assets/fonts/OFL-notoserif.txt
+  fonts:
+    - family: Newsprint
+      fonts:
+        - asset: assets/fonts/NotoSerif.ttf
+    - family: NewsprintBengali
+      fonts:
+        - asset: assets/fonts/NotoSerifBengali.ttf
+    - family: ReaderSans
+      fonts:
+        - asset: assets/fonts/NotoSans.ttf
+    - family: ReaderBengali
+      fonts:
+        - asset: assets/fonts/NotoSansBengali.ttf

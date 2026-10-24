@@ -1,0 +1,178 @@
+[
+  {
+    "id": "prothom-alo",
+    "bangla": "প্রথম আলো",
+    "name": "Prothom Alo",
+    "language": "Bangla",
+    "url": "https://epaper.prothomalo.com/",
+    "access": "FREE_SIGN_IN",
+    "note": "Today’s edition is free with ads; publisher registration is required. Archives and ad-free reading are paid.",
+    "source": "https://static.eprothomalo.com/faq.html",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "ajker-patrika",
+    "bangla": "আজকের পত্রিকা",
+    "name": "Ajker Patrika",
+    "language": "Bangla",
+    "url": "https://epaper.ajkerpatrika.com/",
+    "access": "PUBLIC_READER",
+    "note": "Public page images were visible when checked. Availability can change.",
+    "source": "https://epaper.ajkerpatrika.com/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "ittefaq",
+    "bangla": "ইত্তেফাক",
+    "name": "Ittefaq",
+    "language": "Bangla",
+    "url": "https://epaper.ittefaq.com.bd/",
+    "access": "PUBLIC_READER",
+    "note": "A public page reader was visible when checked. Availability can change.",
+    "source": "https://epaper.ittefaq.com.bd/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "jugantor",
+    "bangla": "যুগান্তর",
+    "name": "Jugantor",
+    "language": "Bangla",
+    "url": "https://epaper.jugantor.com/",
+    "access": "PUBLIC_READER",
+    "note": "A public e-paper reader was visible when checked. Availability can change.",
+    "source": "https://epaper.jugantor.com/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "bd-pratidin",
+    "bangla": "বাংলাদেশ প্রতিদিন",
+    "name": "Bangladesh Pratidin",
+    "language": "Bangla",
+    "url": "https://www.bd-pratidin.com/epaper",
+    "access": "UNKNOWN",
+    "note": "Publisher link listed by MRDI; automated access was blocked. Check the publisher for access and edition date.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "samakal",
+    "bangla": "সমকাল",
+    "name": "Samakal",
+    "language": "Bangla",
+    "url": "https://epaper.samakal.com/",
+    "access": "UNKNOWN",
+    "note": "Publisher link listed by MRDI; access could not be verified.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "bonik-barta",
+    "bangla": "বণিক বার্তা",
+    "name": "Bonik Barta",
+    "language": "Bangla",
+    "url": "https://epaper.bonikbarta.com/",
+    "access": "UNKNOWN",
+    "note": "Publisher e-paper page responds, but the current issue and full reading access need checking.",
+    "source": "https://epaper.bonikbarta.com/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "amader-shomoy",
+    "bangla": "আমাদের সময়",
+    "name": "Amader Shomoy",
+    "language": "Bangla",
+    "url": "https://epaper.dainikamadershomoy.com/",
+    "access": "UNKNOWN",
+    "note": "Publisher e-paper link listed by MRDI; access has not been verified.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "desh-rupantor",
+    "bangla": "দেশ রূপান্তর",
+    "name": "Desh Rupantor",
+    "language": "Bangla",
+    "url": "https://epaper.deshrupantor.com/",
+    "access": "UNKNOWN",
+    "note": "Publisher e-paper link listed by MRDI; access has not been verified.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "janakantha",
+    "bangla": "জনকণ্ঠ",
+    "name": "Janakantha",
+    "language": "Bangla",
+    "url": "https://epaper.dailyjanakantha.com/",
+    "access": "UNKNOWN",
+    "note": "Publisher e-paper link listed by MRDI; access has not been verified.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "sangbad",
+    "bangla": "সংবাদ",
+    "name": "Sangbad",
+    "language": "Bangla",
+    "url": "https://epaper.sangbad.net.bd/",
+    "access": "UNKNOWN",
+    "note": "Publisher e-paper link listed by MRDI; access has not been verified.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "daily-star",
+    "bangla": "দ্য ডেইলি স্টার",
+    "name": "The Daily Star",
+    "language": "English",
+    "url": "https://epaper.thedailystar.net/",
+    "access": "UNKNOWN",
+    "note": "Publisher e-paper link listed by MRDI; access could not be verified.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "dhaka-tribune",
+    "bangla": "ঢাকা ট্রিবিউন",
+    "name": "Dhaka Tribune",
+    "language": "English",
+    "url": "https://epaper.dhakatribune.com/",
+    "access": "UNKNOWN",
+    "note": "Publisher page requires JavaScript; reading access and edition date have not been verified.",
+    "source": "https://epaper.dhakatribune.com/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "tbs",
+    "bangla": "দ্য বিজনেস স্ট্যান্ডার্ড",
+    "name": "The Business Standard",
+    "language": "English",
+    "url": "https://epaper.tbsnews.net/",
+    "access": "SUBSCRIPTION",
+    "note": "The official e-paper site displays paid subscription plans and a login.",
+    "source": "https://epaper.tbsnews.net/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "financial-express",
+    "bangla": "দ্য ফিন্যান্সিয়াল এক্সপ্রেস",
+    "name": "The Financial Express",
+    "language": "English",
+    "url": "https://epaper.thefinancialexpress.com.bd/",
+    "access": "UNKNOWN",
+    "note": "Publisher e-paper link listed by MRDI; access has not been verified.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  },
+  {
+    "id": "new-age",
+    "bangla": "নিউ এজ",
+    "name": "New Age",
+    "language": "English",
+    "url": "https://epaper.newagebd.net/",
+    "access": "UNKNOWN",
+    "note": "Publisher link listed by MRDI; automated access was blocked.",
+    "source": "https://mrdibd.org/paonlmedia/",
+    "checkedOn": "2026-10-24"
+  }
+]
