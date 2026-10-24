@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest an improvement to the catalogue or reader.
+title: "Feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would this help you do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behaviour
+    validations:
+      required: true

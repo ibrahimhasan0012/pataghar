@@ -1,68 +1,68 @@
 # পাতাঘর · Pataghar
 
-A Flutter app for Android, iOS and web. All platforms share the newspaper shelf and reader screen. The initial catalogue contains 16 Bangladeshi publications, search in English and Bangla, access labels, a free-options filter, favourites, day/night themes, list/grid layouts, a last-opened shortcut and interface language selection.
+[![Checks](https://github.com/ibrahimhasan0012/pataghar/actions/workflows/checks.yml/badge.svg)](https://github.com/ibrahimhasan0012/pataghar/actions/workflows/checks.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Flutter](https://img.shields.io/badge/Flutter-Android%20%7C%20iOS%20%7C%20web-02569B.svg)](https://flutter.dev/)
 
-## Download for Android
+Read official Bangladeshi newspaper e-papers from one Flutter app. Pataghar has a catalogue of 16 publications and a shared reader for Android, iOS and web. It opens each publisher's own print-edition site, so the publisher controls the issue date, navigation, account requirements and access.
 
-[Download Pataghar 0.3.0 APK](https://github.com/ibrahimhasan0012/pataghar/releases/download/v0.3.0/Pataghar-0.3.0-Android.apk) · [All releases](https://github.com/ibrahimhasan0012/pataghar/releases)
+[Download the Android preview](https://github.com/ibrahimhasan0012/pataghar/releases/latest) · [Browse the catalogue](assets/papers.json) · [Report an issue](https://github.com/ibrahimhasan0012/pataghar/issues/new/choose)
 
-Download the APK on your Android phone, open it, and allow installation from your browser or file manager when Android asks. Android 7.0 or newer is required. This preview is compiled in release mode and signed with a development key; it is not a Google Play release. Publisher subscriptions and login requirements still apply.
+| Light | Dark · Bangla |
+| --- | --- |
+| ![Phone-sized light preview](previews/v03-phone-light.png) | ![Phone-sized dark and Bangla preview](previews/v03-phone-dark-bangla.png) |
 
-![Pataghar phone layout](previews/v03-phone-light.png)
+These images are Flutter widget renders at phone dimensions. They are not device screenshots.
 
-## Reading
+## What the app does
 
-On Android and iOS, the shared reader screen embeds the official publisher site with the system WebView. On web it embeds the site in an iframe. Publishers provide their own page layout, page navigation, date selection, zoom, advertising and login. The app does not convert different publications into a uniform page-image format.
+- Opens the publisher's e-paper in a shared reader, with an option to open the publisher directly.
+- Searches newspaper names in Bangla and English and filters by language or available free options.
+- Shows access labels so readers can distinguish public readers, sign-in requirements, subscriptions and unverified access.
+- Saves favourites, language, theme and the last-opened publication locally.
+- Uses touch-friendly rows on phones, a grid on wider screens, bundled Bengali and English fonts, and light and dark themes.
 
-Some publishers block embedding in other websites or do not support login in embedded browsers. The reader always offers **Open publisher** to open the official site separately. The app respects browser embedding restrictions; it does not remove response headers or use a proxy to bypass them. A blank iframe cannot reliably be detected across origins.
+Pataghar does not download issues or bypass publisher logins, paywalls or embedding restrictions. The catalogue is bundled; a publication's current issue and access rules can change without an app update. Check the date and terms on the publisher's page.
 
-The app does not require a PDF download. Reading still transfers data and may use browser/WebView caching. Publisher sites may offer downloads. Paid subscriptions, login requirements and publisher restrictions still apply.
+## Get the Android app
 
-## Run
+Download the APK from the [latest release](https://github.com/ibrahimhasan0012/pataghar/releases/latest) and open it on an Android 7.0 or newer device. Android may ask you to allow installation from your browser or file manager. The APK is a preview build signed with a development certificate. It has not been tested on a physical Android device, and it is not a Google Play build.
 
-Install a current stable Flutter SDK, then run from this folder:
+The repository also contains iOS and web source. iOS needs full Xcode and signing to build for a device.
+
+## Build from source
+
+Install a current [Flutter SDK](https://docs.flutter.dev/get-started/install), the Android SDK and JDK 17 for Android builds. On macOS, install full Xcode for iOS builds.
 
 ```sh
 flutter pub get
-flutter run -d <android-device-id>
-flutter run -d <ios-device-id>
-flutter run -d chrome
-```
-
-For Android, install the SDK components required by the generated Flutter project and use JDK 17 or newer as required by its Gradle version. For iOS, use macOS with full Xcode, its SDKs, CocoaPods if needed, and a development team for signing a physical-device build. iOS source is included; local compilation is not evidence of App Store acceptance.
-
-```sh
 flutter analyze
 flutter test
-flutter build web
+flutter run -d <device-id>
+```
+
+Build targets:
+
+```sh
 flutter build apk --release
+flutter build web
 flutter build ios --no-codesign
 ```
 
-## Catalogue
+The current Android release configuration signs with a development key. Set up a private production signing key before distributing through an app store. Build checks for source changes run in [GitHub Actions](.github/workflows/checks.yml).
 
-Maintain `assets/papers.json`. Every entry includes its official reader URL, access category, research note, source and review date. Dates refer to link/access research, not verification of that day’s issue. The catalogue is bundled and does not update remotely. Check the issue date inside each publisher reader.
+## Catalogue and access
 
-On 24 October 2026, public readers were visible for Ajker Patrika, Ittefaq and Jugantor. Prothom Alo’s FAQ stated that the current edition is free with ads and requires registration; archives and ad-free access are paid. TBS displayed subscription plans. Remaining access labels are explicitly unverified. A blocked automated request does not prove a site is unavailable or paid.
+Edit [assets/papers.json](assets/papers.json) to update a publication. Each entry includes an official reader URL, access label, review note, source and date. The review date records when the link and access information were checked; it does not certify that day's issue. See [CONTRIBUTING.md](CONTRIBUTING.md) for the catalogue rules.
 
-Sources: [Prothom Alo FAQ](https://static.eprothomalo.com/faq.html), [MRDI directory](https://mrdibd.org/paonlmedia/), and the linked publisher sites.
+The publisher's site may block an embedded reader or sign-in inside a WebView. Use **Open publisher** from the reader when that happens. On web, third-party frame restrictions can also prevent an issue from appearing.
 
-## Privacy
+## Privacy and licenses
 
-Favourites, language, theme and the last-opened newspaper ID are stored locally using platform preferences or browser storage. The app has no server, account, analytics or advertising SDK. Publisher pages make their own network requests, set cookies and apply their own privacy policies. WebView cookies and browser cookies may be separate. Preferences are not synced between devices.
+Favourites, language, theme and the last-opened publication ID are saved on the device or in browser storage. Pataghar has no account, server, analytics or advertising SDK. Publisher pages make their own network requests and may use cookies, accounts and ads.
 
-## Verification
+Original app code and artwork are under the [MIT License](LICENSE). The four bundled Noto fonts have separate SIL Open Font Licenses in [assets/fonts](assets/fonts). The design reference notice is in [design-sources](design-sources). Newspaper names identify their publishers; publisher pages and content are not part of this repository's license.
 
-See `VERIFICATION.md` for actual build and test results and device-testing limitations. This repository contains the active Flutter app.
+## Project notes
 
-## Design update (0.2.0)
-
-The shelf now uses bundled Noto Serif Bengali and Noto Sans Bengali fonts, more compact cards, accessible access badges and a night theme. The reader includes focus mode and a clearer publisher fallback. Larger system text switches the shelf to a flexible list. Last opened reopens a publisher reader without claiming to restore a particular issue or page position. Night theme changes app controls; publisher pages keep their original colours.
-
-[DESIGN.md](DESIGN.md) documents the applied UI UX Pro Max guidance, Wonderous reference, design decisions and font licences.
-
-## Mobile update (0.3.0)
-
-Phones now start with tappable newspaper rows, a shorter heading and separate favourite/access buttons. Wider screens retain the grid. The app includes a consistent Pataghar launcher and startup mark, Android adaptive/themed icons, and replacement iPhone/iPad and web install icons. English and Bengali headings and controls use four bundled Noto font families. Theme, language and favourite preferences remain compatible with earlier versions.
-
-The release-mode preview APK still uses the development signing certificate so it can update the earlier APK. A production signing setup is required before store distribution. See `VERIFICATION.md` for the current download and device-testing limits.
+[DESIGN.md](DESIGN.md) records design decisions and source references. [VERIFICATION.md](VERIFICATION.md) lists completed checks and device-testing limits. Contributions are welcome through [issues](https://github.com/ibrahimhasan0012/pataghar/issues) and [pull requests](CONTRIBUTING.md).

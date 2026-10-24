@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a problem with the app or a newspaper link.
+title: "Bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the newspaper and issue date when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open…\n2. Tap…\n3. See…"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Device, OS and app version
+      placeholder: Android 14, Pataghar 0.3.0
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
